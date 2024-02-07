@@ -9,6 +9,12 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-20.04
     steps:
-      - name: Say hello
+      - name: Whoami
         run: |
-          echo "Hello gihub :)"
+          whoami
+      - name: Date
+        run: |
+          date
+      - name: Directory Listing
+        run: |
+          ls -lhisa
